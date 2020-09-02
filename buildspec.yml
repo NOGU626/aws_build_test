@@ -2,6 +2,8 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      python: 37
     commands:
       - pip install --upgrade pip
       - pip install --upgrade awscli
