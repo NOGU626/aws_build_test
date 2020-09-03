@@ -2,7 +2,7 @@ import boto3
 from time import sleep
 
 # S3
-BUCKET_NAME = "noguchi-test-bucket-batch"
+BUCKET_NAME = "nogu-python-test00"
 TARGET_DIR = "batch"
 FILE_CONTENTS = ""
 
@@ -13,7 +13,6 @@ SEC = 20
 def PutS3(i):
     s3 = boto3.resource('s3')
     bucket = s3.Bucket(BUCKET_NAME)
-    bucket.create()
     filename = str(i+1)
     
     obj = bucket.put_object(ACL='private', Body=FILE_CONTENTS, Key=TARGET_DIR + "/" + filename, ContentType='text/plain')
