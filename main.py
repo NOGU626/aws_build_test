@@ -24,6 +24,6 @@ def count(i):
 
 if __name__ == '__main__':
     for i in range(MAX_ITER):
-    sleep(SEC)
-    count(i)
-    PutS3(i)
+        sleep(SEC)
+        count(i)
+        PutS3(i)
