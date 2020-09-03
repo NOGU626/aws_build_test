@@ -20,6 +20,7 @@ def PutS3(i):
 
 def count(i):
     print("{}秒経過しました。".format((i+1)*SEC))
+    print("乙様うなぎ")
 
 if __name__ == '__main__':
     for i in range(MAX_ITER):
